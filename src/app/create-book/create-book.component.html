@@ -1,0 +1,23 @@
+<h3>Add a book</h3>
+
+<form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label>Book Name</label>
+        <input type="text" class="form-control" id="bookName"
+        [(ngModel)]="book.bookName" name = "bookName">
+    </div>
+    <div class="form-group">
+        <label>Writer Name</label>
+        <input type="text" class="form-control" id="writerName" 
+        [(ngModel)]="book.writerName" name="writerName">
+    </div>
+    <div class="form-group">
+        <label>Year of Issue</label>
+        <input type="text" class="form-control" id="yearIssue"
+        [(ngModel)]="book.yearIssue" name="yearIssue">
+    </div>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+
+</form>

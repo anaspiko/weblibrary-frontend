@@ -1,0 +1,17 @@
+<h2>Book list</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Book Name</th>
+            <th>Book Writer</th>
+            <th>Year of Issue</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books">
+            <td> {{book.bookName}}</td>
+            <td> {{book.writerName}}</td>
+            <td> {{book.yearIssue}}</td>
+        </tr>
+    </tbody>
+</table>
