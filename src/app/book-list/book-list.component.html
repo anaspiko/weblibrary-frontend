@@ -5,6 +5,7 @@
             <th>Book Name</th>
             <th>Book Writer</th>
             <th>Year of Issue</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -12,6 +13,9 @@
             <td> {{book.bookName}}</td>
             <td> {{book.writerName}}</td>
             <td> {{book.yearIssue}}</td>
+            <td>
+                <button (click)= "updateBook(book.id)" class="btn btn-info">Update</button>
+            </td>
         </tr>
     </tbody>
 </table>
