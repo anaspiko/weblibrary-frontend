@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullname": "Ana Špiko",
+      "email": "anaspiko2@gmail.com",
+      "password": "12345678",
+      "id": 1
+    },
+    {
+      "fullname": "Ana Špiko",
+      "email": "",
+      "password": "12345678",
+      "id": 2
+    },
+    {
+      "fullname": "Book Book",
+      "email": "book@library.com",
+      "password": "bookbook",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

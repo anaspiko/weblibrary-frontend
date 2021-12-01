@@ -1,0 +1,15 @@
+.card {
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: (-50%, 50%);
+    background: rgb(221, 233, 221);
+}
+button {
+    background-color: rgb(10, 10, 10);
+    border: solid 1px white;
+    color: rgb(250, 244, 244);
+}
