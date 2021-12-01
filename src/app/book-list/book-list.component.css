@@ -1,0 +1,9 @@
+.container-fluid {
+    background-color: rgb(245, 245, 245);
+}
+
+table tbody td button {
+    color: black;
+    background-color: rgb(161, 212, 151);
+    border: 1px solid black;
+}
