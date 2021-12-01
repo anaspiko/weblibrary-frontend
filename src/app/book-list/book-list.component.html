@@ -1,31 +1,35 @@
+<router-outlet></router-outlet>
+  
+
 <div class="container">
     <nav class="navbar navbar-expand-sm" >
     <div class="container-fluid">
         <h1>Web Library</h1>
         <div class="d-flex">
-            <button class="btn btn-success">Add a Book</button>
+            <a><button class="btn btn-success" [routerLink]="['/create-book']" routerLinkActive="router-link-active" >Add a Book</button></a>
         </div>
     </div>
-</nav>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Book Name</th>
-            <th>Book Writer</th>
-            <th>Year of Issue</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let book of books">
-            <td> {{book.bookName}}</td>
-            <td> {{book.writerName}}</td>
-            <td> {{book.yearIssue}}</td>
-            <td>
+    </nav>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>Book Writer</th>
+                <th>Year of Issue</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books">
+                <td> {{book.bookName}}</td>
+                <td> {{book.writerName}}</td>
+                <td> {{book.yearIssue}}</td>
+                <td>
                 <button (click)= "updateBook(book.id)" class="btn btn-info">Edit</button>
                 <button (click)="deleteBook(book.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
-            </td>
-        </tr>
-    </tbody>
-</table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
 </div>
