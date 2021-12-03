@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
         return a.email === this.loginForm.value.email && a.password === this.loginForm.value.password
     });
     if(user){
-      alert("Login Success!");
+      this.router.navigate['book-list'];
      
       this.router.navigate(['/books'])
     } else {
